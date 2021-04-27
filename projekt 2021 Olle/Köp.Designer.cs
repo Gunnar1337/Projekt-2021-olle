@@ -134,6 +134,7 @@ namespace projekt_2021_Olle
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Köp";
             this.Text = "Köp";
+            this.Load += new System.EventHandler(this.Köp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_Pfilm5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_Pfilm4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PicBox_Pfilm3)).EndInit();

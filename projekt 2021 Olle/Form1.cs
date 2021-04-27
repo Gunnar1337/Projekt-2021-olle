@@ -7,21 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing;
+
 
 namespace projekt_2021_Olle
 {
     public partial class MainWindow : Form
     {
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
+
         private void btn_Köpa_Click(object sender, EventArgs e)
         {
             Köp Fönster = new Köp();
             Fönster.Show();
-            
+
 
         }
 
@@ -41,5 +45,6 @@ namespace projekt_2021_Olle
         {
             Environment.Exit(0);
         }
+
     }
 }

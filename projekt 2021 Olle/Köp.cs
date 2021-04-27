@@ -16,5 +16,10 @@ namespace projekt_2021_Olle
         {
             InitializeComponent();
         }
+
+        private void Köp_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
