@@ -9,17 +9,20 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql;
 using MySql.Data.MySqlClient;
+using System.Security.Cryptography;
 
 namespace projekt_2021_Olle
 {
     public partial class Login : Form
     {
 
-        public string connection = "SERVER=localhost;DATABASE=Login;UID=Admin;PASSWORD=admin";
+        public string connection = "SERVER=localhost;DATABASE=bio;UID=Admin;PASSWORD=admin";
         public Login()
         {
             InitializeComponent();
         }
+
+       
 
         private void Login_Load(object sender, EventArgs e)
         {
@@ -38,49 +41,68 @@ namespace projekt_2021_Olle
             bool loginsucces = false;
 
             MySqlCommand comm = conn1.CreateCommand();
-            comm.CommandText = $"select (@namn) from användare  ";
+            comm.CommandText = $"select count(1) from användare where Användarnamn = (@namn) ";
             comm.Parameters.AddWithValue("@namn", $"{användarnamn}");
          
-            MySqlDataReader dataReader = comm.ExecuteReader();
-
-
-            if (dataReader.HasRows)
+            
+            int count = Convert.ToInt32(comm.ExecuteScalar());
+            if ( count == 1)
             {
-                string lössenord = Txtbx_Password.Text.ToString();
                 
-                MySqlConnection conn2 = new MySqlConnection(connection);
-                conn2.Open();
+                     string lössenord = Txtbx_Password.Text.ToString();
+                 
+                     MySqlConnection conn2 = new MySqlConnection(connection);
+                     conn2.Open();
 
 
 
-                MySqlCommand comm2 = conn2.CreateCommand();
-                comm.CommandText = $"select (@lössen) from användare  ";
-                comm.Parameters.AddWithValue("@lössen", $"{lössenord}");
+                     MySqlCommand comm2 = conn2.CreateCommand();
+                     comm2.CommandText = $"select count(1) from användare where Lösenord = (@lössen)  ";
+                     comm2.Parameters.AddWithValue("@lössen", $"{lössenord}");
 
-                MySqlDataReader dataReader2 = comm2.ExecuteReader();
-             
-                if (dataReader2.HasRows)
-                {
+                int count2 = Convert.ToInt32(comm2.ExecuteScalar());
+                
 
-                    MessageBox.Show("login succes");
+                       if (count2 == 1)
+                       {
 
-                    Lägg_Till_Filmer fönster = new Lägg_Till_Filmer();
+                           MessageBox.Show("login succes");
 
-                        fönster.Show();
+                           Lägg_Till_Filmer fönster = new Lägg_Till_Filmer();
 
-                    Environment.Exit(0);
+                              fönster.Show();
 
-                }
+                           Environment.Exit(0);
+
+                       }
+                       else
+                       {
+                          MessageBox.Show("wrong password");
+                       }
+
+                 
+               
 
 
-            }
+
+
+
+            } 
             else
             {
                 MessageBox.Show("wrong username");
             }
 
+            
 
 
+
+
+        }
+
+        private void Btn_SignIn_Click(object sender, EventArgs e)
+        {
+            string usrn = Txtbx_Username.ToString(); 
 
         }
     }

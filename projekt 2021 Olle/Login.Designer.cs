@@ -48,6 +48,7 @@ namespace projekt_2021_Olle
             // 
             this.Txtbx_Password.Location = new System.Drawing.Point(171, 87);
             this.Txtbx_Password.Name = "Txtbx_Password";
+            this.Txtbx_Password.PasswordChar = '*';
             this.Txtbx_Password.Size = new System.Drawing.Size(138, 20);
             this.Txtbx_Password.TabIndex = 1;
             // 
@@ -89,6 +90,7 @@ namespace projekt_2021_Olle
             this.Btn_SignIn.TabIndex = 5;
             this.Btn_SignIn.Text = "Sign in";
             this.Btn_SignIn.UseVisualStyleBackColor = true;
+            this.Btn_SignIn.Click += new System.EventHandler(this.Btn_SignIn_Click);
             // 
             // Login
             // 

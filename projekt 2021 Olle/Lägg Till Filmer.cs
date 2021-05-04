@@ -16,5 +16,10 @@ namespace projekt_2021_Olle
         {
             InitializeComponent();
         }
+
+        private void Lägg_Till_Filmer_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
