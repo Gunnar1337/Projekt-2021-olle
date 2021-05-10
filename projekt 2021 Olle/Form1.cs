@@ -14,7 +14,7 @@ namespace projekt_2021_Olle
 {
     public partial class MainWindow : Form
     {
-
+        public string connection = "SERVER=localhost;DATABASE=bio;UID=Admin;PASSWORD=admin";
         public MainWindow()
         {
             InitializeComponent();

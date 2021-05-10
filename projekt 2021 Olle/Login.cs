@@ -15,8 +15,9 @@ namespace projekt_2021_Olle
 {
     public partial class Login : Form
     {
-
         public string connection = "SERVER=localhost;DATABASE=bio;UID=Admin;PASSWORD=admin";
+
+
         public Login()
         {
             InitializeComponent();
@@ -35,7 +36,7 @@ namespace projekt_2021_Olle
         {
             string användarnamn = Txtbx_Username.Text.ToString();
             
-            MySqlConnection conn1 = new MySqlConnection(connection);
+            MySqlConnection conn1 = new MySqlConnection();
             conn1.Open();
 
             bool loginsucces = false;
@@ -72,7 +73,7 @@ namespace projekt_2021_Olle
 
                               fönster.Show();
 
-                           Environment.Exit(0);
+                          
 
                        }
                        else
