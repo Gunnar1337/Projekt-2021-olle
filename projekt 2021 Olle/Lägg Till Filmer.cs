@@ -31,11 +31,11 @@ namespace projekt_2021_Olle
 
             openFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif; *.png";
 
-            Txtb_Poster.Text = openFileDialog.FileName.ToString();
+           
 
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-
+               Txtb_Poster.Text = openFileDialog.FileName.ToString();
             }
         }
 
@@ -48,20 +48,26 @@ namespace projekt_2021_Olle
             string poster = Txtb_Poster.Text;
 
 
+
             MySqlConnection conn1 = new MySqlConnection(connection);
             conn1.Open();
 
+
+
             MySqlCommand comm = conn1.CreateCommand();
-            comm.CommandText = $"insert into filmer ('Namn', 'Genrer','Sal','Popularitet' ) values ((@namn), (@genre),(@sal),(@pipularitet)) ";
+            comm.CommandText = $"insert into filmer ('Namn', 'Genrer','Sal','Popularitet', 'Poster' ) values ((@namn), (@genre),(@sal),(@popularitet), (@Poster)) ";
             comm.Parameters.AddWithValue("@namn",$"{Namn}" );
             comm.Parameters.AddWithValue("@genre", $"{gener}");
-            comm.Parameters.AddWithValue("@sal", $"{sal}");
-            comm.Parameters.AddWithValue("@popularitet", $"{popularitet}");
+            comm.Parameters.AddWithValue("@sal", sal);
+            comm.Parameters.AddWithValue("@popularitet", popularitet);
+            comm.Parameters.AddWithValue("@Poster", poster);
+
+            MessageBox.Show("filmen ä tillagd");
 
             comm.ExecuteNonQuery();
 
 
-
+            conn1.Close();
 
         }
     }

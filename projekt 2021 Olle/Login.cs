@@ -36,10 +36,10 @@ namespace projekt_2021_Olle
         {
             string användarnamn = Txtbx_Username.Text.ToString();
             
-            MySqlConnection conn1 = new MySqlConnection();
+            MySqlConnection conn1 = new MySqlConnection(connection);
             conn1.Open();
 
-            bool loginsucces = false;
+       
 
             MySqlCommand comm = conn1.CreateCommand();
             comm.CommandText = $"select count(1) from användare where Användarnamn = (@namn) ";
@@ -72,6 +72,11 @@ namespace projekt_2021_Olle
                            Lägg_Till_Filmer fönster = new Lägg_Till_Filmer();
 
                               fönster.Show();
+
+                         
+                           conn1.Close();
+                           conn2.Close();
+
 
                           
 

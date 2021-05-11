@@ -120,7 +120,7 @@ namespace projekt_2021_Olle
             this.Btn_login.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_login.Location = new System.Drawing.Point(-3, 292);
             this.Btn_login.Name = "Btn_login";
-            this.Btn_login.Size = new System.Drawing.Size(131, 37);
+            this.Btn_login.Size = new System.Drawing.Size(134, 37);
             this.Btn_login.TabIndex = 7;
             this.Btn_login.Text = "Login";
             this.Btn_login.UseVisualStyleBackColor = false;
