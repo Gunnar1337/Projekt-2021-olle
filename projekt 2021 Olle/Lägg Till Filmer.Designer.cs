@@ -43,6 +43,7 @@ namespace projekt_2021_Olle
             this.button1 = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.Btn_SaveFilm = new System.Windows.Forms.Button();
+            this.Btn_exit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -149,11 +150,22 @@ namespace projekt_2021_Olle
             this.Btn_SaveFilm.UseVisualStyleBackColor = true;
             this.Btn_SaveFilm.Click += new System.EventHandler(this.Btn_SaveFilm_Click);
             // 
+            // Btn_exit
+            // 
+            this.Btn_exit.Location = new System.Drawing.Point(713, 12);
+            this.Btn_exit.Name = "Btn_exit";
+            this.Btn_exit.Size = new System.Drawing.Size(75, 23);
+            this.Btn_exit.TabIndex = 14;
+            this.Btn_exit.Text = "Exit";
+            this.Btn_exit.UseVisualStyleBackColor = true;
+            this.Btn_exit.Click += new System.EventHandler(this.Btn_exit_Click);
+            // 
             // Lägg_Till_Filmer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Btn_exit);
             this.Controls.Add(this.Btn_SaveFilm);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
@@ -190,5 +202,6 @@ namespace projekt_2021_Olle
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button Btn_SaveFilm;
+        private System.Windows.Forms.Button Btn_exit;
     }
 }

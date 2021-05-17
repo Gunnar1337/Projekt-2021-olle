@@ -17,6 +17,7 @@ namespace projekt_2021_Olle
         public string connection = "SERVER=localhost;DATABASE=bio;UID=Admin;PASSWORD=admin";
         public Lägg_Till_Filmer()
         {
+            
             InitializeComponent();
         }
 
@@ -55,20 +56,32 @@ namespace projekt_2021_Olle
 
 
             MySqlCommand comm = conn1.CreateCommand();
-            comm.CommandText = $"insert into filmer ('Namn', 'Genrer','Sal','Popularitet', 'Poster' ) values ((@namn), (@genre),(@sal),(@popularitet), (@Poster)) ";
+            comm.CommandText = $"insert into filmer (Namn, Genre,filmer.Sal,Popularitet, Poster ) values ((@namn), (@genre),(@sal),(@popularitet), (@Poster)) ";
             comm.Parameters.AddWithValue("@namn",$"{Namn}" );
             comm.Parameters.AddWithValue("@genre", $"{gener}");
             comm.Parameters.AddWithValue("@sal", sal);
             comm.Parameters.AddWithValue("@popularitet", popularitet);
             comm.Parameters.AddWithValue("@Poster", poster);
 
+            
+
+
+            MySqlDataReader reader = comm.ExecuteReader();
+
+            reader.Read();
+
+            
             MessageBox.Show("filmen ä tillagd");
-
-            comm.ExecuteNonQuery();
-
+            
+            
 
             conn1.Close();
 
+        }
+
+        private void Btn_exit_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
