@@ -32,7 +32,6 @@ namespace projekt_2021_Olle
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.panel1 = new System.Windows.Forms.Panel();
             this.Btn_exit = new System.Windows.Forms.Button();
-            this.btn_Filmer = new System.Windows.Forms.Button();
             this.Btn_login = new System.Windows.Forms.Button();
             this.btn_Köpa = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -75,7 +74,6 @@ namespace projekt_2021_Olle
             // 
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Controls.Add(this.Btn_exit);
-            this.panel1.Controls.Add(this.btn_Filmer);
             this.panel1.Controls.Add(this.Btn_login);
             this.panel1.Controls.Add(this.btn_Köpa);
             this.panel1.Controls.Add(this.panel5);
@@ -92,7 +90,7 @@ namespace projekt_2021_Olle
             this.Btn_exit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(35)))));
             this.Btn_exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_exit.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_exit.Location = new System.Drawing.Point(0, 366);
+            this.Btn_exit.Location = new System.Drawing.Point(0, 331);
             this.Btn_exit.Name = "Btn_exit";
             this.Btn_exit.Size = new System.Drawing.Size(131, 37);
             this.Btn_exit.TabIndex = 9;
@@ -100,25 +98,12 @@ namespace projekt_2021_Olle
             this.Btn_exit.UseVisualStyleBackColor = false;
             this.Btn_exit.Click += new System.EventHandler(this.Btn_exit_Click);
             // 
-            // btn_Filmer
-            // 
-            this.btn_Filmer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(35)))));
-            this.btn_Filmer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Filmer.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Filmer.Location = new System.Drawing.Point(0, 218);
-            this.btn_Filmer.Name = "btn_Filmer";
-            this.btn_Filmer.Size = new System.Drawing.Size(131, 37);
-            this.btn_Filmer.TabIndex = 8;
-            this.btn_Filmer.Text = "Filmer";
-            this.btn_Filmer.UseVisualStyleBackColor = false;
-            this.btn_Filmer.Click += new System.EventHandler(this.btn_Filmer_Click);
-            // 
             // Btn_login
             // 
             this.Btn_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(4)))), ((int)(((byte)(35)))));
             this.Btn_login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Btn_login.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_login.Location = new System.Drawing.Point(-3, 292);
+            this.Btn_login.Location = new System.Drawing.Point(-3, 236);
             this.Btn_login.Name = "Btn_login";
             this.Btn_login.Size = new System.Drawing.Size(134, 37);
             this.Btn_login.TabIndex = 7;
@@ -363,7 +348,6 @@ namespace projekt_2021_Olle
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btn_Filmer;
         private System.Windows.Forms.Button Btn_login;
         private System.Windows.Forms.Button btn_Köpa;
         private System.Windows.Forms.PictureBox PicBox_Pfilm6;

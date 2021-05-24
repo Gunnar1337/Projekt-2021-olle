@@ -44,7 +44,7 @@ namespace projekt_2021_Olle
             int i = 0;
             while (i < 5)
             {
-                picboxpop[i].Load(Poster[0]);
+                picboxpop[i].Load(Poster[i]);
 
                 i++;
             }
@@ -62,11 +62,10 @@ namespace projekt_2021_Olle
 
             MySqlDataReader reader = comm.ExecuteReader();
 
-            reader.Read();
+            
 
-            if (reader.IsDBNull(0) != true)
+            while (reader.Read())
             {
-
 
                 string tempPO = reader.GetString("Poster");
                 Poster.Add(tempPO);

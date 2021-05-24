@@ -81,7 +81,7 @@ namespace projekt_2021_Olle
 
         private void Btn_exit_Click(object sender, EventArgs e)
         {
-            
+            this.Close();
         }
     }
 }

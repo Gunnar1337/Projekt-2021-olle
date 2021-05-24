@@ -84,7 +84,7 @@ namespace projekt_2021_Olle
             int i = 0;
             while(i < 6)
             {
-                picboxpop[i].LoadAsync(Poster[0]);
+                picboxpop[i].LoadAsync(Poster[i]);
 
                 i++;
             }
@@ -101,9 +101,9 @@ namespace projekt_2021_Olle
 
             MySqlDataReader reader = comm.ExecuteReader();
 
-            reader.Read();
+           
 
-            if (reader.IsDBNull(0) != true)
+           while (reader.Read())
             {
                
 
@@ -125,13 +125,11 @@ namespace projekt_2021_Olle
             comm.CommandText = $"select ID, Namn, Popularitet, Poster from Filmer where ID > 0 order by ID Asc";
 
             MySqlDataReader reader2 = comm.ExecuteReader();
+;
 
-            reader2.Read();
-
-            if (reader2.IsDBNull(0) != true)
+          while (reader2.Read())
             {
 
-                
 
                 string tempfilm = reader2.GetString("Poster");
                 NYPoster.Add(tempfilm);
@@ -146,7 +144,7 @@ namespace projekt_2021_Olle
             int i = 0;
             while (i < 6)
             {
-                picboxny[i].LoadAsync(NYPoster[0]);
+                picboxny[i].LoadAsync(NYPoster[i]);
 
 
                 i++;
