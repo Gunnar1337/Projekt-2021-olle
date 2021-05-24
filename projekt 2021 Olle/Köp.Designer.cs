@@ -58,6 +58,7 @@ namespace projekt_2021_Olle
             this.PicBox_Pfilm5.Location = new System.Drawing.Point(547, 45);
             this.PicBox_Pfilm5.Name = "PicBox_Pfilm5";
             this.PicBox_Pfilm5.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Pfilm5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Pfilm5.TabIndex = 11;
             this.PicBox_Pfilm5.TabStop = false;
             // 
@@ -66,6 +67,7 @@ namespace projekt_2021_Olle
             this.PicBox_Pfilm4.Location = new System.Drawing.Point(441, 45);
             this.PicBox_Pfilm4.Name = "PicBox_Pfilm4";
             this.PicBox_Pfilm4.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Pfilm4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Pfilm4.TabIndex = 10;
             this.PicBox_Pfilm4.TabStop = false;
             // 
@@ -74,6 +76,7 @@ namespace projekt_2021_Olle
             this.PicBox_Pfilm3.Location = new System.Drawing.Point(335, 45);
             this.PicBox_Pfilm3.Name = "PicBox_Pfilm3";
             this.PicBox_Pfilm3.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Pfilm3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Pfilm3.TabIndex = 9;
             this.PicBox_Pfilm3.TabStop = false;
             // 
@@ -82,6 +85,7 @@ namespace projekt_2021_Olle
             this.PicBox_Pfilm2.Location = new System.Drawing.Point(229, 45);
             this.PicBox_Pfilm2.Name = "PicBox_Pfilm2";
             this.PicBox_Pfilm2.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Pfilm2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Pfilm2.TabIndex = 8;
             this.PicBox_Pfilm2.TabStop = false;
             // 
@@ -90,6 +94,7 @@ namespace projekt_2021_Olle
             this.PicBox_Pfilm1.Location = new System.Drawing.Point(123, 45);
             this.PicBox_Pfilm1.Name = "PicBox_Pfilm1";
             this.PicBox_Pfilm1.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Pfilm1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Pfilm1.TabIndex = 7;
             this.PicBox_Pfilm1.TabStop = false;
             // 
@@ -116,6 +121,7 @@ namespace projekt_2021_Olle
             this.Btn_VäljFilm.TabIndex = 14;
             this.Btn_VäljFilm.Text = "Välj Film";
             this.Btn_VäljFilm.UseVisualStyleBackColor = false;
+            this.Btn_VäljFilm.Click += new System.EventHandler(this.Btn_VäljFilm_Click);
             // 
             // Köp
             // 
@@ -131,7 +137,7 @@ namespace projekt_2021_Olle
             this.Controls.Add(this.PicBox_Pfilm2);
             this.Controls.Add(this.PicBox_Pfilm1);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Köp";
             this.Text = "Köp";
             this.Load += new System.EventHandler(this.Köp_Load);

@@ -175,6 +175,7 @@ namespace projekt_2021_Olle
             this.PicBox_Pfilm6.Location = new System.Drawing.Point(541, 49);
             this.PicBox_Pfilm6.Name = "PicBox_Pfilm6";
             this.PicBox_Pfilm6.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Pfilm6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Pfilm6.TabIndex = 6;
             this.PicBox_Pfilm6.TabStop = false;
             // 
@@ -183,6 +184,7 @@ namespace projekt_2021_Olle
             this.PicBox_Pfilm5.Location = new System.Drawing.Point(435, 49);
             this.PicBox_Pfilm5.Name = "PicBox_Pfilm5";
             this.PicBox_Pfilm5.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Pfilm5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Pfilm5.TabIndex = 5;
             this.PicBox_Pfilm5.TabStop = false;
             // 
@@ -191,6 +193,7 @@ namespace projekt_2021_Olle
             this.PicBox_Pfilm4.Location = new System.Drawing.Point(329, 49);
             this.PicBox_Pfilm4.Name = "PicBox_Pfilm4";
             this.PicBox_Pfilm4.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Pfilm4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Pfilm4.TabIndex = 4;
             this.PicBox_Pfilm4.TabStop = false;
             // 
@@ -199,6 +202,7 @@ namespace projekt_2021_Olle
             this.PicBox_Pfilm3.Location = new System.Drawing.Point(223, 49);
             this.PicBox_Pfilm3.Name = "PicBox_Pfilm3";
             this.PicBox_Pfilm3.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Pfilm3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Pfilm3.TabIndex = 3;
             this.PicBox_Pfilm3.TabStop = false;
             // 
@@ -207,6 +211,7 @@ namespace projekt_2021_Olle
             this.PicBox_Pfilm2.Location = new System.Drawing.Point(117, 49);
             this.PicBox_Pfilm2.Name = "PicBox_Pfilm2";
             this.PicBox_Pfilm2.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Pfilm2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Pfilm2.TabIndex = 2;
             this.PicBox_Pfilm2.TabStop = false;
             // 
@@ -215,6 +220,7 @@ namespace projekt_2021_Olle
             this.PicBox_Pfilm1.Location = new System.Drawing.Point(11, 49);
             this.PicBox_Pfilm1.Name = "PicBox_Pfilm1";
             this.PicBox_Pfilm1.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Pfilm1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Pfilm1.TabIndex = 1;
             this.PicBox_Pfilm1.TabStop = false;
             // 
@@ -249,6 +255,7 @@ namespace projekt_2021_Olle
             this.PicBox_Nfilm6.Location = new System.Drawing.Point(541, 37);
             this.PicBox_Nfilm6.Name = "PicBox_Nfilm6";
             this.PicBox_Nfilm6.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Nfilm6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Nfilm6.TabIndex = 12;
             this.PicBox_Nfilm6.TabStop = false;
             // 
@@ -268,6 +275,7 @@ namespace projekt_2021_Olle
             this.PicBox_Nfilm5.Location = new System.Drawing.Point(435, 37);
             this.PicBox_Nfilm5.Name = "PicBox_Nfilm5";
             this.PicBox_Nfilm5.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Nfilm5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Nfilm5.TabIndex = 11;
             this.PicBox_Nfilm5.TabStop = false;
             // 
@@ -276,6 +284,7 @@ namespace projekt_2021_Olle
             this.PicBox_Nfilm2.Location = new System.Drawing.Point(117, 37);
             this.PicBox_Nfilm2.Name = "PicBox_Nfilm2";
             this.PicBox_Nfilm2.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Nfilm2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Nfilm2.TabIndex = 8;
             this.PicBox_Nfilm2.TabStop = false;
             // 
@@ -284,6 +293,7 @@ namespace projekt_2021_Olle
             this.PicBox_Nfilm4.Location = new System.Drawing.Point(329, 37);
             this.PicBox_Nfilm4.Name = "PicBox_Nfilm4";
             this.PicBox_Nfilm4.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Nfilm4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Nfilm4.TabIndex = 10;
             this.PicBox_Nfilm4.TabStop = false;
             // 
@@ -292,6 +302,7 @@ namespace projekt_2021_Olle
             this.PicBox_Nfilm1.Location = new System.Drawing.Point(11, 37);
             this.PicBox_Nfilm1.Name = "PicBox_Nfilm1";
             this.PicBox_Nfilm1.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Nfilm1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Nfilm1.TabIndex = 7;
             this.PicBox_Nfilm1.TabStop = false;
             // 
@@ -300,6 +311,7 @@ namespace projekt_2021_Olle
             this.PicBox_Nfilm3.Location = new System.Drawing.Point(223, 37);
             this.PicBox_Nfilm3.Name = "PicBox_Nfilm3";
             this.PicBox_Nfilm3.Size = new System.Drawing.Size(100, 132);
+            this.PicBox_Nfilm3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PicBox_Nfilm3.TabIndex = 9;
             this.PicBox_Nfilm3.TabStop = false;
             // 

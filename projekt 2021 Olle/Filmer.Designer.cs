@@ -29,15 +29,7 @@ namespace projekt_2021_Olle
         /// </summary>
         private void InitializeComponent()
         {
-            this.treeView1 = new System.Windows.Forms.TreeView();
             this.SuspendLayout();
-            // 
-            // treeView1
-            // 
-            this.treeView1.Location = new System.Drawing.Point(0, 43);
-            this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(799, 409);
-            this.treeView1.TabIndex = 0;
             // 
             // Filmer
             // 
@@ -45,7 +37,6 @@ namespace projekt_2021_Olle
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.treeView1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Filmer";
             this.Text = "Filmer";
@@ -55,7 +46,5 @@ namespace projekt_2021_Olle
         }
 
         #endregion
-
-        private System.Windows.Forms.TreeView treeView1;
     }
 }

@@ -40,10 +40,10 @@ namespace projekt_2021_Olle
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.Btn_SaveFilm = new System.Windows.Forms.Button();
             this.Btn_exit = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -68,7 +68,7 @@ namespace projekt_2021_Olle
             // 
             this.Txtb_Poster.Location = new System.Drawing.Point(83, 150);
             this.Txtb_Poster.Name = "Txtb_Poster";
-            this.Txtb_Poster.Size = new System.Drawing.Size(100, 20);
+            this.Txtb_Poster.Size = new System.Drawing.Size(181, 20);
             this.Txtb_Poster.TabIndex = 2;
             // 
             // Txtb_Sal
@@ -130,16 +130,6 @@ namespace projekt_2021_Olle
             this.label6.TabIndex = 9;
             this.label6.Text = "popularitet";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(189, 150);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 20);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Browse";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Btn_SaveFilm
             // 
             this.Btn_SaveFilm.Location = new System.Drawing.Point(270, 150);
@@ -160,14 +150,23 @@ namespace projekt_2021_Olle
             this.Btn_exit.UseVisualStyleBackColor = true;
             this.Btn_exit.Click += new System.EventHandler(this.Btn_exit_Click);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(83, 177);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(119, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Lägg bildens URL ovan";
+            // 
             // Lägg_Till_Filmer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.Btn_exit);
             this.Controls.Add(this.Btn_SaveFilm);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label3);
@@ -199,9 +198,9 @@ namespace projekt_2021_Olle
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.Button Btn_SaveFilm;
         private System.Windows.Forms.Button Btn_exit;
+        private System.Windows.Forms.Label label4;
     }
 }
